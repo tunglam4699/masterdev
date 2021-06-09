@@ -1,0 +1,5 @@
+Không nên dùng window.location.assign và hãy dùng window.location.href vì assign slower 1 chút so với href
+
+File index.php không có code php nào thì có thể đặt index.html
+
+Còn lại thì khá good rồi (y)
