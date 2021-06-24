@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+  text-align: center;
+  font-family: cursive;
+}
+.rootStart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.btnStatBox {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color:#1D9099;
+  border-radius: 10px;
+
+}
+.btnStart {
+  background-color: #cee9f5;
+  border-radius: 10px;
+  width: 80%;
+  height: 200px;
+  box-shadow: 0 3px #888888;
+  border: none;
+  font-size: 100px;
+  font-family: cursive;
+}
+.username{
+  background-color: #cee9f5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  font-size: 20px;
+  width: 50%;
+}
+.form_error{
+  border: 5px solid #D83D5A;
+}
+.form_error::-webkit-input-placeholder {
+  color: red;
+}
+
+
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+.root {
+  background-color: #9dd2ea;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: 0px 3px #009de4;
+}
+.userName{
+  font-size: 20px;
+  margin: 10px;
+}
+.top {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.score {
+  background-color: #f1ff92;
+  width: 10%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px #888888;
+  
+}
+.main {
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.question {
+  background-color: #9da0ea;
+  border-radius: 10px;
+  height: 70%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+  font-size: 100px;
+  font-family: cursive;
+}
+.answerBox {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.answer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 20%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+  border: none;
+  flex-direction: column;
+}
+.btnSubmit {
+  background-color: #b481d9;
+  border-radius: 10px;
+  height: 10%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+  border: none;
+  margin-top: 10px;
+}
+.bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.resetGame {
+  background-color: #cee9f5;
+  width: 15%;
+  height: 80%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+  border: none;
+}
+.timeRemaining {
+  width: 30%;
+  height: 80%;
+  background-color: #b0e64c;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+}
+input {
+  border: none;
+}
+.Result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.resultBox {
+  background-color: #cee9f5;
+  border-radius: 10px;
+  width: 50%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px #888888;
+  border: none;
+  font-size: 30px;
+  font-family: cursive;
+  flex-direction: column;
+}
+.listBtn{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.btnHighScore{
+  background-color: #f1ff92;
+  border-radius: 34px;
+  width: 60px;
+  height: 60px;
+}
+.btnPlayAgain {
+  background-color: #f1ff92;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+}
+
+
+.answer:hover {
+  background-color: #f1ff92;
+}
+
+.answer:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+.btnStart:hover, .btnPlayAgain:hover, .btnHighScore:hover{
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+    
+  );
+  animation: slidebg 2s linear infinite;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  background-color: #cee9f5;
+  border-radius: 10px;
+  width: 50%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body{
+  width: 100%;
+  height: 100%;
+
+}
+.modal-header{
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 25px;
+  background-color: #16b3f7;
+  align-items: center;
+  height: 10%;
+}
+.highScore{
+  height: 90%;
+  border-radius: 10px;
+}
+#customers table{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #16b3f7;
+  color: white;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
